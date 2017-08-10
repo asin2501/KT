@@ -1,0 +1,39 @@
+.full-screen-widget {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+
+    &__half {
+        min-height: inherit;
+        width: 50%;
+    }
+
+    &.full-screen-widget--video {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        &.hidden {
+            video {
+                z-index: -10;
+            }
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            width: 100vh;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    }
+}

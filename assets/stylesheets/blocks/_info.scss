@@ -1,0 +1,47 @@
+.info {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding: 30px;
+    background-color: #FFF;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+    }
+
+    & :last-child {
+        margin-bottom: 0;
+    }
+
+    .tabs__content {
+        div {
+            margin-bottom: 44px;
+
+            & :last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    address, p {
+        margin-bottom: 20px;
+    }
+
+    @include breakpoint(small) {
+        margin-top: 0;
+    }
+
+
+    @include breakpoint(mobile) {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        // /font-size: rem(7);
+    }
+}

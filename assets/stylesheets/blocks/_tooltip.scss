@@ -1,0 +1,16 @@
+.ui-tooltip.ui-widget {
+    display: inline-block;
+    width: auto;
+    max-width: inherit;
+    padding-top: 6px;
+    padding-right: 18px;
+    padding-bottom: 4px;
+    padding-left: 18px;
+    border: solid 0.5px #4a4a4a;
+    border-radius: 0;
+    background-color: #fff;
+    font-family: $base-font-family;
+    font-size: rem(10);
+    text-transform: uppercase;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}

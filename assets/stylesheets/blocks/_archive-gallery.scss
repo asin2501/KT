@@ -1,0 +1,27 @@
+.archive-gallery {
+    &__item {
+        display: block;
+        width: 25%;
+        box-sizing: border-box;
+        padding: 12px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @include breakpoint(small) {
+        &__item {
+            width: 33.3%;
+            padding: 6px;
+        }
+    }
+
+
+    @include breakpoint(mobile-landscape) {
+        &__item {
+            width: 50%;
+        }
+    }
+}

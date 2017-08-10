@@ -1,0 +1,26 @@
+.block-buttons {
+    position: relative;
+
+    &__next, &__prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 600;
+        width: 60px;
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        font-size: 0;
+    }
+
+    &__prev {
+        background-image: url("../images/arrow-left.png");
+        left: 0;
+    }
+
+    &__next {
+        background-image: url("../images/arrow-right.png");
+        right: 0;
+    }
+}

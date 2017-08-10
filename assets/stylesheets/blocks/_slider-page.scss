@@ -1,0 +1,37 @@
+.slider-page {
+    position: relative;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        min-height: inherit;
+        margin-right: -6px;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    main {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 90px;
+        padding-bottom: 46px;
+    }
+
+    footer {
+        margin-top: -46px;
+    }
+
+    @include breakpoint(extra-small) {
+        main {
+            padding-bottom: 198px;
+        }
+
+        footer {
+            margin-top: -188px;
+        }
+    }
+}
